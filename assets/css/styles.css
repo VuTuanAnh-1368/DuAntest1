@@ -1,0 +1,333 @@
+/* Reset CSS */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif; 
+  /*font chữ đẹp hơn*/
+}
+ /* 1. vị trí
+ 2, kích thước height with
+ 3, màu sắcc
+ 4, kiểu dáng(kiểu chữ, hình tròn ,đứnng ngang..)*/
+/* 1, từ ngoài vào trong
+ 2, từ trên xuống dưới
+ 3, tổng quan đến chi tiết
+*/
+#app {
+
+
+} 
+
+#header {
+width: 100%;
+height: 95px;
+background-color: #CCFFFF; 
+position: fixed; /*khi lướt trang wwebkhông bị mất header*/
+top:0;
+right:0;
+left:0;
+
+}
+
+#nav {
+    display: inline-block; /*giới hạn nav chỉ đến hết thẻ li cuối cufgn trên phần*/
+}
+#nav .logo a {
+  font-size: 1rem ; 
+    display: inline-block;
+    padding: 0;
+    font-size: 29px !important ;
+    color: #2a6496;
+    margin: 0px 350px 0px 180px !important;
+    transition: all .2s;
+    line-height:100px  !important ; 
+    left: 180px; /*cần nếu  k có important của margin*/
+}
+#nav,.subnav {
+ list-style-type: none;
+}
+#nav>li {
+  display: inline-block; /* inline trên 1 hàng*/
+}
+ .home {
+  padding: 0 10px !important;
+  border: 2px solid #3c3950;
+ 
+}
+#nav li {
+position: relative;
+
+}
+
+#nav > li>a {
+  font-size: 25px ;
+ text-decoration: none;       /* Xóa gạch chân chữ*/
+ line-height:24px;                 /* căn giữu bằng  cách cho bằng height header   */
+ padding : 0 15px;             /*căn trái phải giữa các chữ*/
+ font-weight: bold;                     
+ color: #000 ;
+ /*chuyển chữ hoa */
+ /*di chuột hiện màu*/
+}
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav>li:hover>a {
+    color: #2a6496;
+   
+    display: inline-block; /* backgrounfd màu cho full thẻ a*/
+}
+#nav .subnav {
+ display: none; /* ẩn menu cấp 2*/
+ position: absolute;
+ top: 100%;
+ 
+ background-color: #FFFFFF;
+ box-shadow: 0 0 10px rgba(0, 0,0, 0.3);  /*bóng đổ mờ*/
+}
+#nav .subnav a {
+ color: black;
+padding: 0 20px;
+line-height: 40px;
+
+text-decoration: none;  
+}
+#nav .subnav li {
+width: 150px;
+
+}
+#nav .subnav li:hover a {
+  color: #2a6496;
+  background-color: #FFCCFF;
+  display: block;
+  
+}
+ #menu {
+  font-size: 15px; 
+}
+#nav .search-container {
+  padding: 0 0 0 200px;
+}
+#header .search-btn {
+  padding: 0 50px;
+  float: right;
+  cursor: wait;
+  line-height: 100px;             /* căn giữu bằng  cách cho bằng height header   */
+}
+
+}
+ #icon {
+  font-size: 20px;
+  color: #000;;
+
+}
+
+
+
+#slider {
+  padding-top: 50% ; /*Để phần trăm sẽ trở thành kích thước theo tỉ lệ top,right..                                                                                                                              */
+  width: 100%;
+ 
+  color: #3c3950;
+ 
+  margin-top: 95px;
+  background: url('../img/slider/slider0.jpg') top center / cover no-repeat ;
+  opacity: 0.9;
+  position:relative;
+ 
+}
+#slider .text-content {
+  top: 100px;
+  position: absolute;
+  with: 100%;
+  left: 33% ;
+  text-align:  center ;
+  
+
+}
+.text1 {
+ font-size: 18pt;
+ font-weight: bold;
+ top: 5px;
+  padding: 30px;
+  color: #33FFFF!important;
+}
+.text2 {
+ font-size: 80px;
+ color: #fff !important;
+
+}
+.text3 {
+   padding: 30px 30px 20px 30px;
+  font-size: 35px ;
+  color: #FFCCFF!important;
+  font-weight: bold;
+}
+.text4 {
+  font-size: 25px;
+  padding: 0 0 80px 0;
+  color: #33FFFF !important;
+}
+#youtube {
+  padding: 15px 35px 15px 35px;
+  font-weight: bold;
+  background-color: rgb(0, 191, 165); 
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  text-decoration: none;    
+  
+  
+  
+}
+
+ #who {
+  padding: 15px 50px 15px 50px;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;    
+  border: 2.3px solid #76bb36;
+  color: white;
+}
+/*:hover #youtube {
+  background-color: #3c3950;
+}
+:hover #who {
+  background-color: #3c3950;
+  color:rgb(255, 255, 255);
+}
+*/
+#content {
+
+}
+.dk {
+  display: inline-block;
+}
+#content .text-content {
+ width: 1170px;
+ height: 520px;
+ margin-left: auto;
+ margin-right: auto;
+ text-align: center;
+}
+
+#content .content1 {
+  padding: 140px 0 40px 0;
+  color: #3e3950;
+  font-size: 25px ;
+  font-style: normal;
+  font-weight: normal;
+}
+.content2{
+  padding: 0px 0 70px 0;
+  color: #3e3950;
+  font-size: 38px;
+  font-family: 'Montserrat';
+}
+.content3{ 
+  padding: 0 0 15px 0;
+  color: #5f727f;
+  font-size: 18px;
+}
+.content4{ 
+  padding: 0 0 15px 0;
+  color: #5f727f;
+  font-size: 18px;
+}
+.content5{ 
+  color: #5f727f;
+  font-size: 18px;
+}
+/**/
+#content .signup {
+  width: 1452px;
+  height: 800px;
+  background-color: #6699FF;
+
+ }
+
+.picture {
+  width:1452px!important;
+  text-align: left;
+  height: auto;
+   border: 0;
+    vertical-align: top;
+  padding: 0 120px 50px 0px;
+  margin-right: 0;
+}
+.textsignup {
+  vertical-align: inherit;
+  color: #000000;
+  text-transform: none;
+  line-height: 42px;
+  font-size: 28px;
+  font-style: normal;
+  font-family: 'Montserrat';
+  box-sizing: border-box;
+ text-align: center;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+/*contact*/
+
+.contact {
+  width: 1452px;
+  height: 256.63px;
+  background-color: #CFCFCF;
+  display: block;
+
+ }
+.thank{
+  padding:80px 40px 0 658px;
+}
+ #thankfor {
+
+  border-radius: 8px;
+   border: 1px solid #B1B1B1;
+   width: 213px;
+   box-sizing: border-box;
+}
+.icon-contact  {
+  margin-left: 700px;
+  margin-top: 80px;
+}
+
+#footer {
+
+  width: 1452px;
+  height: 110.6px;
+  background-color: #454B54;
+}
+
+
+
+.full{
+  padding :0 0 0 1200px ;
+  font-size: 140%;
+} 
+.infofull {
+  display: inline-block;
+  }
+.info {
+  color: #99a9b5;
+  font-size: 150%;
+  padding :50px 0 0 580px ;
+}
+
+#icon1 {
+  color:royalblue;
+}
+#icon2{
+  color:darksalmon;
+}
+
+
+#icon4{
+  color:#fff;
+}
+#icon5{
+  color:crimson;
+}
